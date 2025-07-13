@@ -14,7 +14,7 @@ Welcome to the RAG AGENT Chatbot, a powerful and intelligent assistant that leve
 - **🤖 Conversational AI**: A user-friendly chat interface for seamless interaction.
 - **🏠 Home Page**: A welcoming home page that provides an overview of the chatbot's capabilities and architecture.
 
-##  архитектура
+##  Agent Architecture
 
 The RAG AGENT Chatbot is built using a sophisticated agent architecture that intelligently routes user requests to the most appropriate tool. The agent's workflow is as follows:
 
@@ -32,22 +32,23 @@ The RAG AGENT Chatbot is built using a sophisticated agent architecture that int
 
 - **Streamlit**: For the user interface and chat application.
 - **LangChain**: For building the RAG agent and managing the language model.
+- **Langsmith**: For monitoring and debugging the agent.
 - **ChromaDB**: For creating and managing the vector store.
 - **Tavily**: For the web search functionality.
-- **OpenAI**: For the language model.
+- **OpenAI**: For the language model (gpt-4.1-mini).
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Python 3.7+
+- Python 3.11+
 - An OpenAI API key
 
 ### Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/RAG_agent_chatbot.git
+   git clone https://github.com/nefro_313/RAG_agent_chatbot.git
    cd RAG_agent_chatbot
    ```
 
@@ -60,13 +61,9 @@ The RAG AGENT Chatbot is built using a sophisticated agent architecture that int
    Create a `.env` file in the root directory and add your OpenAI API key:
    ```
    OPENAI_API_KEY="your-api-key"
+   TAVLIY_API_KEY="your_tavliy_key"
+   LANGSMITH_API_KEY="your_langsmith_key"
    ```
-
-4. **Build the vector store**:
-   ```bash
-   python scripts/build_vector_store.py
-   ```
-
 5. **Run the application**:
    ```bash
    streamlit run app.py
@@ -75,7 +72,7 @@ The RAG AGENT Chatbot is built using a sophisticated agent architecture that int
 ## 🧪 How to Test
 
 1. **Test the RAG functionality**:
-   - Download the `starxai.pdf` from the sidebar.
+   - Download the `starxai.pdf`  . To Know the Rag Source.
    - Ask questions like:
      - "What is the aim of the Starx AI technology?"
      - "Who is the CEO of Starx AI technology?"
@@ -86,11 +83,7 @@ The RAG AGENT Chatbot is built using a sophisticated agent architecture that int
      - "What is the feedback of the F1 movie released starring Brad Pitt?"
 
 3. **Test the PDF upload functionality**:
-   - Upload the `testfile.pdf` from the sidebar.
+   - Upload the `testfile.pdf` from the streamlit sidebar.
    - Ask questions like:
      - "Why is Sanna Vaara saying she is worried?"
      - "Who is Sanna Vaara?"
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
