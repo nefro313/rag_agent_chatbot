@@ -9,4 +9,5 @@ langchain-chroma
 pypdf
 langchain-tavily
 python-dotenv
-IPython
+
+faiss-cpu
