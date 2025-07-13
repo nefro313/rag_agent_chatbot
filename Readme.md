@@ -6,7 +6,7 @@ Welcome to the RAG AGENT Chatbot, a powerful and intelligent assistant that leve
 
 [Link to the live demo](https://rag-agent-chatai.streamlit.app/)
 
-[[Watch Demo on Video](https://cdn.loom.com/sessions/thumbnails/e5b8c04bca094dd8a5507925ab887002-with-play-button.gif)](https://www.loom.com/share/b6294ac376b240ad856d565af0e82980?sid=af78e1b5-23dc-486f-9450-0a4649adc067)
+[[Watch the Chat bot demo](https://cdn.loom.com/sessions/thumbnails/e5b8c04bca094dd8a5507925ab887002-with-play-button.gif)](https://www.loom.com/share/b6294ac376b240ad856d565af0e82980?sid=af78e1b5-23dc-486f-9450-0a4649adc067)
 ## ✨ Features
 
 - **📄 PDF Upload**: Upload a PDF document to provide instant context for your questions.
