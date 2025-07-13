@@ -70,8 +70,8 @@ if st.session_state.page == "🏠 Home":
         - “What is the aim of the Starx AI technology?”  
         - “Who is the CEO of Starx AI technology?”  
     2. **Ask a web search question** to pull fresh info:  
-       - “Who is the current President of USA?”  
-       - “What is the feedback of the F1 movie released starring Brad Pitt?”  
+       - “What is the feedback of the new 2025 F1 movie released starring Brad Pitt?”  
+       - “Who is the 2025 President of USA?”  
        
     3. **Use the test PDF** (`testfile.pdf`) to check upload-only flows:  
        - “Why is Sanna Vaara saying she is worried?”  
@@ -107,13 +107,12 @@ else:
 
     vectorstore = get_vectorstore(st.session_state.thread_id)
 
-    # 4. DISPLAY HISTORY
+
     for msg in st.session_state.messages:
         role = "assistant" if isinstance(msg, AIMessage) else "user"
         with st.chat_message(role):
             st.markdown(msg.content)
 
-    # 5. USER INPUT + PDF HANDLING
     user_input = st.chat_input(
         placeholder="Ask a question…",
         accept_file=True,
@@ -140,12 +139,10 @@ else:
             os.unlink(tmp_path)
             file_ctx = "\n\n".join(p.page_content for p in pages)
 
-        # 6. APPEND USER MESSAGE
         full_payload = (file_ctx + "\n\n" + question).strip()
         user_msg = HumanMessage(content=full_payload)
         st.session_state.messages.append(user_msg)
 
-        # 7. INVOKE RAG‑AGENT
         try:
             result = graph_agent.invoke(
                 {

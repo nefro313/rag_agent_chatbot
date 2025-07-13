@@ -79,8 +79,8 @@ The RAG AGENT Chatbot is built using a sophisticated agent architecture that int
 
 2. **Test the web search functionality**:
    - Ask questions like:
-     - "Who is the current President of the USA?"
-     - "What is the feedback of the F1 movie released starring Brad Pitt?"
+     - “What is the feedback of the new 2025 F1 movie released starring Brad Pitt?”  
+     - “Who is the 2025 President of USA?” 
 
 3. **Test the PDF upload functionality**:
    - Upload the `testfile.pdf` from the streamlit sidebar.
