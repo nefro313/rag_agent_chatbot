@@ -4,7 +4,7 @@ Welcome to the RAG AGENT Chatbot, a powerful and intelligent assistant that leve
 
 ## 🚀 Demo
 
-[Link to the live demo](https://your-demo-link.com)
+[Link to the live demo](https://rag-agent-chatai.streamlit.app/)
 
 ## ✨ Features
 
