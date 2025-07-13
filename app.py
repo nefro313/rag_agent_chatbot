@@ -100,12 +100,6 @@ else:
 
     st.session_state.last_active = now
 
-    @st.cache_resource(show_spinner=False)
-    def get_vectorstore(thread_id: str):
-        from scripts.build_vector_store import vectordb  
-        return vectordb
-
-    vectorstore = get_vectorstore(st.session_state.thread_id)
 
 
     for msg in st.session_state.messages:
